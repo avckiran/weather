@@ -25,7 +25,59 @@
         <!-- Currently weather selection -->
         <section id="current-day-weather-container">
             <h1 class="location-label">Brasov</h1>
+
+            <div class="flex-container" id="temperature-summary-container">
+                <div>
+                    <img src="./assets/images/summary-icons/clear-day-white.png" alt="">
+                </div>
+                <div>
+                    <h1 id="degree-label">20&#176;</h1>
+                    <p id="summary-label">Clear Day</p>
+                </div>
+            </div>
+
+            <div class="flex-container" id="humidity-wind-container">
+                <div>
+                    <img class="icon-sm-30" src="./assets/images/icons/humidity.png" alt="">
+                    <span>20%</span>
+                </div>
+                <div>
+                    <img class = "icon-sm-30" src="./assets/images/icons/wind-speed-flag.png" alt="">
+                    <span>3 m/h</span>
+                </div>
+            </div>
+            
         </section>
+
+        <!-- Lower Panel Section new changes -->
+      <section class="lower-panel">
+          <button class="ripple center_x"  id="toggle-hourly-weather">
+              <img src="./assets/images/icons/up-arrow.png" alt="">
+          </button>
+          <!-- Daily Weather Wrapper -->
+          <div id="daily-weather-wrapper" class="lower-panel-body">
+            <div class="flex-container weather-box current-day-of-the-week">
+                <div>
+                    <h1>Sunday</h1>
+                </div>
+                <div class="flex-container">
+                    <div>
+                        <p>19&#176;</p>
+                    </div>
+                    <div>
+                        <img class="icon-sm-30" src="./assets/images/summary-icons/clear-day-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+          </div>
+
+
+
+
+
+      </section>
 
     </main>
 
